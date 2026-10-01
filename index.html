@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman Nilai ASTS Ganjil Informatika 2026/2027 - SMP YPU Bandung</title>
+  
+  <!-- Favicon dari Logo Resmi Sekolah -->
+  <link rel="icon" type="image/png" href="https://i.ibb.co.com/8gMSjY4F/IMG-20251203-114653.png">
+  
+  <!-- Font Google & Icon Libraries: Font Lebih Santai, Hangat, & Bersahabat (Quicksand & Comfortaa) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- External Libraries for Digital Effects & Export -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Quicksand"', 'sans-serif'],
+            heading: ['"Comfortaa"', 'cursive', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            pastel: {
+              sage: '#CCD5AE',
+              sageLight: '#E9EDC9',
+              cream: '#FEFAE0',
+              sprout: '#D8F3DC',
+              leaf: '#B7E4C7',
+              mintForest: '#74C69D',
+              morningSky: '#D0EBFB',
+              blossomPink: '#FDE2E4',
+              petalRose: '#F7ADC2',
+              earthSand: '#FAEDCD',
+              woodWarm: '#D4A373',
+              natureBorder: '#CFE1B9',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Lush Nature Aesthetic with Soft Pastel Botanics & Casual Tone */
+    body {
+      background-color: #F7FAF5;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(216, 243, 220, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 90% 85%, rgba(233, 237, 201, 0.7) 0%, transparent 48%),
+        radial-gradient(circle at 50% 40%, rgba(254, 250, 224, 0.5) 0%, transparent 55%),
+        radial-gradient(circle at 80% 10%, rgba(208, 235, 251, 0.45) 0%, transparent 40%),
+        radial-gradient(circle at 20% 85%, rgba(253, 226, 228, 0.5) 0%, transparent 40%);
+      background-attachment: fixed;
+      font-family: 'Quicksand', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-heading {
+      font-family: 'Comfortaa', 'Quicksand', cursive, sans-serif;
+    }
+
+    /* Kanvas Dedaunan yang Gugur Berguguran */
+    #leavesFallingCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 15;
+    }
+
+    /* Animasi Ayunan Dahan Pohon Alami (Swaying Branches) */
+    .branch-left {
+      position: fixed;
+      top: -15px;
+      left: -20px;
+      z-index: 20;
+      pointer-events: none;
+      transform-origin: top left;
+      animation: branchWindSwayLeft 6.5s ease-in-out infinite;
+      filter: drop-shadow(0 6px 14px rgba(116, 198, 157, 0.22));
+    }
+
+    .branch-right {
+      position: fixed;
+      top: -25px;
+      right: -30px;
+      z-index: 20;
+      pointer-events: none;
+      transform-origin: top right;
+      animation: branchWindSwayRight 7.8s ease-in-out infinite;
+      filter: drop-shadow(0 6px 14px rgba(204, 213, 174, 0.25));
+    }
+
+    @keyframes branchWindSwayLeft {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(2.8deg) translateY(6px) scale(1.02); }
+    }
+
+    @keyframes branchWindSwayRight {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(-3.2deg) translateY(7px) scale(1.015); }
+    }
+
+    .nature-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(207, 225, 185, 0.9);
+      box-shadow: 0 16px 38px -10px rgba(183, 228, 199, 0.42), 0 6px 20px -4px rgba(212, 163, 115, 0.14);
+    }
+
+    .nature-leaf-badge {
+      background: linear-gradient(135deg, #E9EDC9 0%, #D8F3DC 100%);
+      border: 1px solid #B7E4C7;
+    }
+
+    .floating-leaf {
+      animation: gentleSway 3.6s ease-in-out infinite;
+    }
+    @keyframes gentleSway {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(5deg); }
+    }
+
+    .captcha-box {
+      background: linear-gradient(135deg, #F4FBF7 0%, #FEFDF6 100%);
+      border: 2px dashed #A3D9A5;
+      user-select: none;
+      letter-spacing: 0.35em;
+    }
+
+    /* Sound wave subtle animation */
+    @keyframes soundBarPulse {
+      0%, 100% { height: 6px; }
+      50% { height: 16px; }
+    }
+    .sound-active-bar-1 { animation: soundBarPulse 1.1s ease-in-out infinite; }
+    .sound-active-bar-2 { animation: soundBarPulse 0.8s ease-in-out infinite 0.2s; }
+    .sound-active-bar-3 { animation: soundBarPulse 1.3s ease-in-out infinite 0.4s; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col justify-between text-stone-800 antialiased selection:bg-pastel-leaf selection:text-emerald-950 font-sans relative">
+
+  <!-- Kanvas untuk Partikel Dedaunan Berjatuhan -->
+  <canvas id="leavesFallingCanvas"></canvas>
+
+  <!-- Dahan Pohon Kiri dengan Daun Bergerak Tertiup Angin -->
+  <div class="branch-left w-48 sm:w-64 md:w-80 select-none opacity-90">
+    <svg viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+      <!-- Dahan Kayu Hangat -->
+      <path d="M-10 10 C 60 25, 140 30, 240 90 C 260 102, 280 120, 310 145" stroke="#936639" stroke-width="8" stroke-linecap="round"/>
+      <path d="M70 26 C 110 55, 140 85, 175 130" stroke="#936639" stroke-width="5" stroke-linecap="round"/>
+      <path d="M160 50 C 200 40, 230 45, 265 65" stroke="#A68A64" stroke-width="4.5" stroke-linecap="round"/>
+      <path d="M220 80 C 240 105, 255 125, 275 150" stroke="#B08968" stroke-width="3.5" stroke-linecap="round"/>
+      
+      <!-- Daun-daun Pastel Segar di Dahan Kiri -->
+      <path d="M120 40 C 95 15, 145 0, 160 25 C 175 50, 145 65, 120 40 Z" fill="#74C69D" opacity="0.95"/>
+      <path d="M85 30 C 55 10, 85 -10, 115 10 C 130 25, 110 45, 85 30 Z" fill="#95D5B2" opacity="0.9"/>
+      <path d="M170 120 C 140 105, 170 80, 195 95 C 220 110, 195 140, 170 120 Z" fill="#52B788" opacity="0.92"/>
+      <path d="M235 85 C 210 65, 245 45, 270 65 C 290 85, 260 105, 235 85 Z" fill="#B7E4C7" opacity="0.95"/>
+      <path d="M260 60 C 240 35, 280 20, 295 45 C 310 70, 280 80, 260 60 Z" fill="#D8F3DC" opacity="0.9"/>
+      <path d="M295 135 C 275 110, 315 100, 325 125 C 335 150, 315 160, 295 135 Z" fill="#74C69D" opacity="0.92"/>
+      <path d="M150 90 C 130 75, 150 55, 175 70 C 195 85, 170 105, 150 90 Z" fill="#CCD5AE" opacity="0.88"/>
+      <path d="M205 45 C 185 30, 215 15, 235 30 C 250 45, 225 60, 205 45 Z" fill="#E9EDC9" opacity="0.95"/>
+    </svg>
+  </div>
+
+  <!-- Dahan Pohon Kanan dengan Daun Bergerak Tertiup Angin -->
+  <div class="branch-right w-44 sm:w-60 md:w-76 select-none opacity-90">
+    <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+      <!-- Dahan Kayu Kanan -->
+      <path d="M310 5 C 250 20, 180 30, 90 90 C 70 105, 45 125, 10 145" stroke="#936639" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M230 22 C 190 50, 160 85, 125 125" stroke="#936639" stroke-width="5" stroke-linecap="round"/>
+      <path d="M150 45 C 110 40, 80 45, 45 65" stroke="#A68A64" stroke-width="4" stroke-linecap="round"/>
+      
+      <!-- Daun-daun Pastel Segar di Dahan Kanan -->
+      <path d="M190 35 C 215 10, 165 -5, 150 20 C 135 45, 165 60, 190 35 Z" fill="#52B788" opacity="0.94"/>
+      <path d="M125 110 C 150 95, 120 70, 95 85 C 75 100, 100 130, 125 110 Z" fill="#74C69D" opacity="0.92"/>
+      <path d="M60 80 C 85 60, 50 40, 25 60 C 5 80, 35 100, 60 80 Z" fill="#B7E4C7" opacity="0.95"/>
+      <path d="M40 55 C 60 30, 20 15, 5 40 C -10 65, 20 75, 40 55 Z" fill="#E9EDC9" opacity="0.9"/>
+      <path d="M10 135 C 30 110, -10 100, -20 125 C -30 150, -10 160, 10 135 Z" fill="#95D5B2" opacity="0.88"/>
+      <path d="M140 85 C 160 70, 140 50, 115 65 C 95 80, 120 100, 140 85 Z" fill="#CCD5AE" opacity="0.92"/>
+      <path d="M230 40 C 255 20, 220 5, 200 25 C 185 40, 210 55, 230 40 Z" fill="#D8F3DC" opacity="0.95"/>
+    </svg>
+  </div>
+
+  <!-- Top Navigation & Branding (Nature Theme) -->
+  <header class="w-full bg-white/85 backdrop-blur-md border-b border-pastel-natureBorder sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-4 py-3 sm:px-6 flex items-center justify-between gap-3">
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <div class="relative p-1.5 bg-white rounded-2xl shadow-xs border border-pastel-natureBorder flex items-center justify-center">
+          <img src="https://i.ibb.co.com/8gMSjY4F/IMG-20251203-114653.png" 
+               alt="Logo SMP YPU Bandung" 
+               class="h-10 sm:h-12 w-auto object-contain rounded-xl hover:scale-105 transition-transform duration-200"
+               onerror="this.src='https://placehold.co/120x120/D8F3DC/2D6A4F?text=YPU'">
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] sm:text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-pastel-sprout text-emerald-800 tracking-wider font-mono flex items-center gap-1">
+              <i class="fa-solid fa-seedling text-[11px] text-emerald-600"></i>
+              HASIL ASESMEN ASTS
+            </span>
+            <span class="inline-flex items-center text-[10px] sm:text-[11px] font-semibold text-emerald-800 bg-pastel-sageLight px-2 py-0.5 rounded-full border border-pastel-sage/50">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mr-1.5"></span>
+              TP 2026/2027
+            </span>
+          </div>
+          <h1 class="text-base sm:text-lg font-extrabold text-stone-900 tracking-tight">SMP YPU BANDUNG</h1>
+        </div>
+      </div>
+      
+      <!-- Nature Ambient Sound Player & Motto Badge -->
+      <div class="flex items-center gap-2">
+        <!-- Interactive Ambient Audio Toggle -->
+        <div class="flex items-center bg-white/90 border border-pastel-natureBorder rounded-xl shadow-xs px-2 py-1 gap-2">
+          <button 
+            id="btnAmbientSound" 
+            type="button" 
+            onclick="toggleNatureAudio()" 
+            title="Putar Suara Alam: Angin, Gemericik Sungai & Kerincing"
+            class="flex items-center gap-2 px-2.5 py-1 rounded-lg hover:bg-pastel-sprout/60 text-emerald-900 text-xs font-semibold transition-all duration-200"
+          >
+            <div class="flex items-center gap-0.5 h-4 w-3.5 justify-center" id="soundBarContainer">
+              <span class="w-0.5 h-2 bg-stone-400 rounded-full" id="soundBar1"></span>
+              <span class="w-0.5 h-3.5 bg-stone-400 rounded-full" id="soundBar2"></span>
+              <span class="w-0.5 h-1.5 bg-stone-400 rounded-full" id="soundBar3"></span>
+            </div>
+            <span id="soundLabel" class="hidden sm:inline">Suara Alam: Bisu</span>
+          </button>
+
+          <!-- Nature Volume Slider -->
+          <div class="hidden sm:flex items-center gap-1.5 pl-1.5 border-l border-pastel-natureBorder" title="Atur Volume Suara Alam">
+            <i class="fa-solid fa-volume-low text-[10px] text-stone-400"></i>
+            <input 
+              type="range" 
+              id="natureVolumeSlider" 
+              min="0" 
+              max="100" 
+              value="70" 
+              oninput="adjustNatureVolume(this.value)" 
+              class="w-16 h-1 bg-stone-200 accent-emerald-600 rounded-lg cursor-pointer"
+            >
+          </div>
+        </div>
+
+        <!-- Nature Ecosystem Badge -->
+        <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-xl nature-leaf-badge text-emerald-900 text-xs font-medium shadow-2xs">
+          <i class="fa-solid fa-clover text-emerald-600"></i>
+          <span>Tumbuh, Belajar & Berakar Kuat</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow container max-w-4xl mx-auto px-4 py-8 sm:py-10">
+    <!-- Hero / Title Section -->
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 border border-pastel-natureBorder shadow-xs mb-3 text-xs text-stone-600 font-medium">
+        <i class="fa-solid fa-leaf text-emerald-500 floating-leaf"></i>
+        <span>Panen Capaian Belajar ASTS Ganjil</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-stone-800 tracking-tight">
+        Pengumuman Hasil Nilai <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-teal-600 to-green-600">
+          Mata Pelajaran Informatika
+        </span>
+      </h2>
+      <p class="text-xs sm:text-sm text-stone-500 mt-2 max-w-xl mx-auto">
+        Tahun Pelajaran 2026/2027 • Menanam Pengetahuan Digital, Memetik Buah Prestasi Generasi Muda
+      </p>
+
+      <!-- KKM Information Badges (Nature Styled) -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 mt-4 text-xs font-semibold">
+        <span class="px-3.5 py-1.5 rounded-xl bg-pastel-sprout text-emerald-900 border border-pastel-leaf flex items-center gap-1.5 shadow-2xs">
+          <i class="fa-solid fa-spa text-emerald-600"></i>
+          KKM Kelas VIII: <b class="font-bold underline ml-1">76</b>
+        </span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-pastel-sageLight text-stone-800 border border-pastel-sage flex items-center gap-1.5 shadow-2xs">
+          <i class="fa-solid fa-tree text-emerald-700"></i>
+          KKM Kelas IX: <b class="font-bold underline ml-1">78</b>
+        </span>
+      </div>
+    </div>
+
+    <!-- Form Card (Pastel Nature) -->
+    <div class="nature-card rounded-3xl p-6 sm:p-8 max-w-xl mx-auto transition-all duration-300">
+      <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-stone-100">
+        <div class="w-10 h-10 rounded-2xl bg-pastel-sprout flex items-center justify-center text-emerald-800 shadow-inner">
+          <i class="fa-solid fa-feather-pointed text-lg"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-stone-800">Verifikasi Data Peserta</h3>
+          <p class="text-xs text-stone-500">Masukkan Nomor Peserta dan ketik kode captcha alam dengan teliti</p>
+        </div>
+      </div>
+
+      <form id="checkForm" onsubmit="event.preventDefault(); handleCheckResult();" class="space-y-5">
+        <!-- Input Username/Nomor Peserta -->
+        <div>
+          <label for="usernameInput" class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">
+            Nomor Peserta (Username Akun)
+          </label>
+          <div class="relative rounded-2xl shadow-xs">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-emerald-600/60">
+              <i class="fa-regular fa-id-badge"></i>
+            </div>
+            <input 
+              type="text" 
+              id="usernameInput" 
+              placeholder="Contoh: 252607002 atau 242507001" 
+              class="w-full pl-10 pr-4 py-3 bg-white/95 border border-stone-200 focus:border-emerald-400 focus:ring-4 focus:ring-pastel-sprout/60 rounded-2xl text-sm font-mono font-medium placeholder-stone-400 transition-all duration-200 outline-none"
+              required
+            >
+          </div>
+          <span class="text-[11px] text-stone-400 mt-1 block">
+            *Nomor peserta sesuai kartu ASTS Informatika Anda.
+          </span>
+        </div>
+
+        <!-- Captcha Row -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">
+            Kode Keamanan Captcha
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+            <!-- Captcha Display Box -->
+            <div class="flex items-center justify-between px-4 py-2.5 rounded-2xl captcha-box">
+              <span id="captchaText" class="font-mono font-bold text-lg text-emerald-950 select-none tracking-widest">
+                ----
+              </span>
+              <button 
+                type="button" 
+                onclick="generateNewCaptcha()" 
+                title="Ganti Kode Captcha"
+                class="p-2 rounded-xl text-emerald-700 hover:text-emerald-900 hover:bg-white/80 transition-all"
+              >
+                <i class="fa-solid fa-arrows-rotate text-sm"></i>
+              </button>
+            </div>
+
+            <!-- Captcha Input -->
+            <input 
+              type="text" 
+              id="captchaInput" 
+              placeholder="Ketik captcha di sini" 
+              maxlength="5"
+              class="w-full px-4 py-3 bg-white/95 border border-stone-200 focus:border-emerald-400 focus:ring-4 focus:ring-pastel-sprout/60 rounded-2xl text-sm font-mono tracking-wider uppercase placeholder:normal-case placeholder-stone-400 transition-all duration-200 outline-none text-center"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- Alert Notification Box -->
+        <div id="alertBox" class="hidden p-3.5 rounded-2xl text-xs font-medium flex items-start gap-2.5">
+          <i id="alertIcon" class="fa-solid fa-circle-exclamation mt-0.5 text-sm"></i>
+          <span id="alertMessage">Pesan pemberitahuan</span>
+        </div>
+
+        <!-- Submit Button in Soft Pastel Nature Gradient -->
+        <button 
+          type="submit" 
+          id="btnSearch"
+          class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-[#D8F3DC] via-[#E9EDC9] to-[#FAEDCD] hover:from-[#B7E4C7] hover:via-[#CCD5AE] hover:to-[#E0CAAA] text-stone-800 font-bold text-sm shadow-md hover:shadow-lg transform active:scale-[0.99] transition-all duration-200 flex items-center justify-center gap-2 border border-white"
+        >
+          <i class="fa-solid fa-magnifying-glass text-emerald-700"></i>
+          <span>Cari Nomor Peserta</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Result Container (Initially Hidden) -->
+    <div id="resultContainer" class="hidden mt-8 max-w-xl mx-auto">
+      
+      <!-- Card for Display & JPG Export (Pastel Botanical Nature Theme) -->
+      <div id="printableResultCard" class="nature-card rounded-3xl p-6 sm:p-8 bg-white border border-pastel-natureBorder relative overflow-hidden shadow-xl">
+        
+        <!-- Background Organic Floral & Leaves Silhouettes -->
+        <div class="absolute -right-8 -top-8 w-40 h-40 bg-pastel-sprout/60 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute -left-8 -bottom-8 w-40 h-40 bg-pastel-sageLight/70 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="absolute top-1/2 right-3 -translate-y-1/2 text-emerald-600/5 text-8xl pointer-events-none">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        
+        <!-- Header of Card -->
+        <div class="flex items-center justify-between pb-4 border-b border-stone-100 relative z-10">
+          <div class="flex items-center gap-3">
+            <img src="https://i.ibb.co.com/8gMSjY4F/IMG-20251203-114653.png" alt="Logo SMP YPU Bandung" class="h-11 w-auto object-contain">
+            <div>
+              <h4 class="font-extrabold text-sm text-stone-900 leading-tight">SMP YPU BANDUNG</h4>
+              <p class="text-[10px] text-stone-500 font-mono tracking-wide">LEMBAR HASIL ASTS GANJIL TP 2026/2027</p>
+            </div>
+          </div>
+          <div id="statusBadge" class="text-xs font-bold px-3 py-1 rounded-full border">
+            <!-- Dynamic Status Badge -->
+          </div>
+        </div>
+
+        <!-- Student Biodata Block -->
+        <div class="grid grid-cols-2 gap-3 py-4 text-xs border-b border-stone-100 relative z-10">
+          <div>
+            <span class="text-stone-400 block font-mono text-[10px]">NAMA LENGKAP SISWA</span>
+            <span id="resName" class="font-bold text-stone-800 text-sm sm:text-base">-</span>
+          </div>
+          <div>
+            <span class="text-stone-400 block font-mono text-[10px]">NOMOR PESERTA (USERNAME)</span>
+            <span id="resUsername" class="font-bold text-stone-700 font-mono text-sm">-</span>
+          </div>
+          <div>
+            <span class="text-stone-400 block font-mono text-[10px]">KELAS</span>
+            <span id="resClass" class="font-semibold text-stone-700">-</span>
+          </div>
+          <div>
+            <span class="text-stone-400 block font-mono text-[10px]">MATA PELAJARAN</span>
+            <span class="font-semibold text-stone-700">Informatika</span>
+          </div>
+        </div>
+
+        <!-- Score Presentation Section -->
+        <div class="my-5 p-4 rounded-2xl bg-gradient-to-br from-[#F4FBF7] to-[#FEFAF0] border border-pastel-natureBorder/70 flex items-center justify-between relative z-10">
+          <div>
+            <span class="text-xs uppercase font-mono tracking-wider font-semibold text-stone-500">Nilai Perolehan ASTS</span>
+            <div class="flex items-baseline gap-1.5 mt-0.5">
+              <span id="resScore" class="text-4xl sm:text-5xl font-black text-stone-900 tracking-tight">-</span>
+              <span id="resKkmRef" class="text-xs text-stone-400 font-mono font-medium">/ KKM: -</span>
+            </div>
+          </div>
+          <div id="iconScoreBox" class="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-xs">
+            <!-- Dynamic Icon -->
+          </div>
+        </div>
+
+        <!-- Personalized Cheerful Message & Warning Box -->
+        <div id="feedbackBox" class="p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed mb-4 relative z-10">
+          <div class="flex items-start gap-2.5">
+            <span id="feedbackIcon" class="text-xl mt-0.5">🌱</span>
+            <div>
+              <h5 id="feedbackTitle" class="font-bold mb-1">Catatan Evaluasi Guru</h5>
+              <p id="feedbackText" class="text-stone-600">-</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verification Signature Note -->
+        <div class="pt-2 flex justify-between items-end text-[10px] text-stone-400 font-mono relative z-10">
+          <span>*Dokumen digital evaluasi resmi SMP YPU Bandung</span>
+          <span id="resDate">Okt 2026</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons (Pastel Nature Themed) -->
+      <div class="mt-4 flex flex-col sm:flex-row gap-3">
+        <!-- Download JPG Button in Soft Pastel Sprout & Morning Sky -->
+        <button 
+          type="button" 
+          onclick="downloadCardAsJPG()" 
+          id="btnDownload"
+          class="flex-1 py-3 px-5 rounded-2xl bg-gradient-to-r from-[#D8F3DC] via-[#E9EDC9] to-[#D0EBFB] hover:from-[#B7E4C7] hover:via-[#DDE3B0] hover:to-[#B6E0FA] text-stone-800 font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 border border-white"
+        >
+          <i class="fa-solid fa-cloud-arrow-down text-emerald-700"></i>
+          <span>Download Hasil (JPG)</span>
+        </button>
+
+        <!-- Reset / Check Other Button -->
+        <button 
+          type="button" 
+          onclick="resetSearch()" 
+          class="py-3 px-5 rounded-2xl bg-white hover:bg-stone-50 text-stone-600 font-semibold text-xs sm:text-sm border border-stone-200 transition-all flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-arrow-rotate-left text-stone-500"></i>
+          <span>Cari Peserta Lain</span>
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer with SMP YPU Bandung - MOTEKAR! -->
+  <footer class="w-full bg-white/85 border-t border-pastel-natureBorder backdrop-blur-sm py-5 mt-10">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-block px-4 py-1.5 rounded-full bg-pastel-sprout/80 border border-pastel-leaf/60 text-emerald-950 font-bold text-sm sm:text-base tracking-wide shadow-2xs mb-2">
+        SMP YPU Bandung - MOTEKAR! ✊🏻
+      </div>
+      <p class="text-xs text-stone-400">
+        © 2026/2027 Laboratorium Komputer & Tim Guru Informatika. Tumbuh mengakar, berbuah prestasi.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    /* DATABASE SISWA ASTS INFORMATIKA SMP YPU BANDUNG */
+    const studentDatabase = [
+      // KELAS VIII-A
+      { name: "Adi Wistara", class: "Kelas VIII-A", username: "252607002", score: 74 },
+      { name: "Aditya Asmawi Yana", class: "Kelas VIII-A", username: "252607001", score: null },
+      { name: "Aliya Febriyanti", class: "Kelas VIII-A", username: "252607003", score: 67 },
+      { name: "Ayu Aulia Shinta", class: "Kelas VIII-A", username: "252607005", score: null },
+      { name: "Brayen Aditya Pratama", class: "Kelas VIII-A", username: "252607006", score: 45 },
+      { name: "Dexel Gabriel", class: "Kelas VIII-A", username: "252607008", score: 49 },
+      { name: "Dezhar Zhibral Idris", class: "Kelas VIII-A", username: "252607009", score: 62 },
+      { name: "Elang Surya Prasetya", class: "Kelas VIII-A", username: "252607011", score: 84 },
+      { name: "Fanny Anggraeny", class: "Kelas VIII-A", username: "252607013", score: 85 },
+      { name: "Fauzan Ciryll Ibrahim", class: "Kelas VIII-A", username: "252607014", score: 51 },
+      { name: "Felice Andini Gumilar", class: "Kelas VIII-A", username: "252607015", score: 58 },
+      { name: "Fika Friciliani", class: "Kelas VIII-A", username: "252607016", score: 60 },
+      { name: "Ismail Dwi Andhika", class: "Kelas VIII-A", username: "252607018", score: 81 },
+      { name: "Mei Syah Nugrah Amelia", class: "Kelas VIII-A", username: "252607022", score: 68 },
+      { name: "Muhamad Farhan Algivari", class: "Kelas VIII-A", username: "252607023", score: null },
+      { name: "Muhamad Najran Saputra", class: "Kelas VIII-A", username: "252607020", score: 59 },
+      { name: "Muhamad Najrin Saputra", class: "Kelas VIII-A", username: "252607021", score: 62 },
+      { name: "Novandra Raihan Putra", class: "Kelas VIII-A", username: "252607025", score: null },
+      { name: "Rava Aprilian", class: "Kelas VIII-A", username: "252607026", score: 42 },
+      { name: "Rivaldhy Ramadhan Putra", class: "Kelas VIII-A", username: "252607028", score: 70 },
+      { name: "Rizha Putra Pratama", class: "Kelas VIII-A", username: "252607029", score: 16 },
+      { name: "Roro Defara Rohmania Hasyari", class: "Kelas VIII-A", username: "252607030", score: 62 },
+      { name: "Safengi Listiana Suhada", class: "Kelas VIII-A", username: "252607031", score: 45 },
+      { name: "Siti Nurlela", class: "Kelas VIII-A", username: "252607032", score: 78 },
+
+      // KELAS IX-A
+      { name: "Aditya Saputra", class: "Kelas IX-A", username: "242507001", score: 57 },
+      { name: "Albiansyah Hidayat", class: "Kelas IX-A", username: "242507002", score: 53 },
+      { name: "Arina Rahmawati", class: "Kelas IX-A", username: "242507007", score: 59 },
+      { name: "Aryanti Dwi Anggraeni", class: "Kelas IX-A", username: "242507008", score: 59 },
+      { name: "Delia Nur Azizah", class: "Kelas IX-A", username: "242507013", score: 85 },
+      { name: "Destri Zaumi Ananda", class: "Kelas IX-A", username: "242507014", score: 49 },
+      { name: "Dika Arjun Saputra", class: "Kelas IX-A", username: "242507016", score: 59 },
+      { name: "Ilyas Zaki", class: "Kelas IX-A", username: "242507018", score: 65 },
+      { name: "Keyla Amora Reppie", class: "Kelas IX-A", username: "242507022", score: 53 },
+      { name: "Milzan Ibrahim Movic", class: "Kelas IX-A", username: "242507023", score: 55 },
+      { name: "Mira Nurfadilah", class: "Kelas IX-A", username: "242507024", score: 55 },
+      { name: "Muhammad Arya Duta Wijaya", class: "Kelas IX-A", username: "262709054", score: 50 },
+      { name: "Muhammad Dandi", class: "Kelas IX-A", username: "242507025", score: 53 },
+      { name: "Nasya Nur Afni", class: "Kelas IX-A", username: "242507032", score: 72 },
+      { name: "Naurra Fadhilla Idris", class: "Kelas IX-A", username: "252608052", score: 64 },
+      { name: "Nicholas Novicky Sandy", class: "Kelas IX-A", username: "242507035", score: null },
+      { name: "Nurhalimah", class: "Kelas IX-A", username: "252608049", score: null },
+      { name: "Rifqy Rivanka Faisal", class: "Kelas IX-A", username: "242507038", score: 76 },
+      { name: "Rizqy Avrilian Nugraha", class: "Kelas IX-A", username: "242507039", score: null },
+      { name: "Safa Putri Maharani", class: "Kelas IX-A", username: "242507041", score: 73 },
+      { name: "Suci Fatharani Putri", class: "Kelas IX-A", username: "242507045", score: 78 },
+      { name: "Vera Indah Lestari", class: "Kelas IX-A", username: "242507046", score: 78 },
+
+      // KELAS IX-B
+      { name: "Alsya Nazma Novita", class: "Kelas IX-B", username: "242507004", score: 66 },
+      { name: "Anisa Putri Fauziah", class: "Kelas IX-B", username: "242507005", score: 57 },
+      { name: "Arif Aditya Latif", class: "Kelas IX-B", username: "242507006", score: 59 },
+      { name: "Arya Nugraha", class: "Kelas IX-B", username: "262709053", score: null },
+      { name: "Berlian Bushaynah Putri Kurman", class: "Kelas IX-B", username: "242507010", score: 80 },
+      { name: "Cahaya Ananda Tri Evita", class: "Kelas IX-B", username: "242507011", score: 43 },
+      { name: "Didan Khoirul Ramadhan", class: "Kelas IX-B", username: "242507015", score: 51 },
+      { name: "Fawaz Ghaly Mughist Mukhlis", class: "Kelas IX-B", username: "252608050", score: null },
+      { name: "Ibams Arsyalo", class: "Kelas IX-B", username: "242507017", score: 43 },
+      { name: "Johan Permana", class: "Kelas IX-B", username: "242507019", score: 59 },
+      { name: "Kania Aisyah", class: "Kelas IX-B", username: "242507020", score: 47 },
+      { name: "Kartika Susandi", class: "Kelas IX-B", username: "242507021", score: 68 },
+      { name: "Muhamad Noval Ardian", class: "Kelas IX-B", username: "242507028", score: null },
+      { name: "Naysyira Nurhadiani", class: "Kelas IX-B", username: "242507033", score: 81 },
+      { name: "Nizam Muhamad Rozak Fadilah", class: "Kelas IX-B", username: "242507036", score: 61 },
+      { name: "Novia Angelia", class: "Kelas IX-B", username: "242507037", score: 90 },
+      { name: "Princess Anindya Purnama", class: "Kelas IX-B", username: "252608051", score: 88 },
+      { name: "Safa Mutiara Safira", class: "Kelas IX-B", username: "242507040", score: 90 },
+      { name: "Salsabila Azahra", class: "Kelas IX-B", username: "242507042", score: null },
+      { name: "Sintia Septiani", class: "Kelas IX-B", username: "252608048", score: 47 },
+      { name: "Violina Angel", class: "Kelas IX-B", username: "242507047", score: 49 }
+    ];
+
+    /* =========================================================================
+       KOLEKSI PESAN GURU YANG LEBIH LUWES, NATURAL, HANGAT & MANUSIAWI
+       (Menghindari gaya bahasa AI kaku, disesuaikan dengan kultur SMP YPU Bandung)
+       ========================================================================= */
+
+    // 1. Apresiasi untuk nilai >= KKM (Ceria, hangat, membanggakan, dan tulus)
+    const complimentsKkm = [
+      "Keren pisan! Hasil ujianmu membuktikan kalau ketelitian dan fokus belajarmu selama di lab Informatika beneran membuahkan hasil manis. Pertahankan ritme belajarnya ya, bangga lihat pencapaianmu!",
+      "Alhamdulillah, nilaimu mantap sekali! Senang banget melihat konsistensi dan rasa ingin tahumu terhadap materi komputer. Tetap rendah hati, asyik belajar, dan jangan sungkan bantu teman-teman yang lain ya!",
+      "Luar biasa, tuntas dengan nilai yang sangat memuaskan! Ini bukti nyata kalau kamu serius menyimak pelajaran dan rajin eksplorasi materi. Terus gaspol prestasinya di semester ini ya!",
+      "Hebat banget! Kerja keras, catatan rapi, dan latihanmu selama ini terbayar lunas di ASTS kali ini. Pertahankan terus semangat Motekar-nya ya!",
+      "Top markotop! Pemahaman konsep materi Informatika kamu terbukti solid banget di ujian ini. Teruslah penasaran mencoba hal-hal baru di dunia digital!",
+      "Selamat ya atas nilaimu yang memuaskan! Jangan cepat berpuas diri dulu, jadikan pencapaian keren ini pemacu semangat buat bikin karya-karya teknologi yang lebih keren lagi!",
+      "Masya Allah, hasil belajarmu bikin bapak/ibu guru tersenyum bangga! Kamu membuktikan bisa menuntaskan tantangan soal dengan cermat. Terus berkilau ya!",
+      "Cakep banget hasilnya! Ketekunanmu berbuah manis hari ini. Tetap jaga semangat belajar yang positif ini sampai akhir tahun ajaran nanti ya!"
+    ];
+
+    // 2. Motivasi untuk nilai di bawah KKM tapi masih lumayan (Skor 50 - KKM-1)
+    const encouragementMid = [
+      "Sedikit lagi nyentuh KKM nih! Jangan patah semangat ya, kamu sebetulnya sudah paham alur dasarnya, cuma butuh diasah lagi ketelitian saat baca soal. Masih ada banyak waktu di sisa semester 1, yuk kejar bareng-bareng!",
+      "Yuk jangan loyo, modal pemahamanmu sudah lumayan bagus kok! Tinggal rapikan lagi materi yang kemarin sempat bikin bingung, dan jangan ragu bertanya di kelas. Bapak/ibu guru yakin di ujian berikutnya nilaimu bisa melesat naik!",
+      "Nilaimu cuma terpaut sedikit dari batas tuntas. Wajar kok kalau ada bagian yang menantang kemarin, yang penting jangan kapok belajar. Kurangi sedikit waktu santainya, perbanyak latihan soal Informatika, pasti tembus KKM!",
+      "Tetap tegakkan kepala ya! Anggap hasil ini alarm ramah biar kamu makin giat dan terarah belajarnya. Yuk buktikan kalau di penilaian berikutnya kamu sanggup lampaui target KKM!",
+      "Perjalanan semester 1 masih panjang, jangan berkecil hati dulu! Evaluasi bagian mana yang kemarin salah, lalu tanyakan saat jam istirahat atau praktikum. Semangat terus, kamu pasti bisa!",
+      "Potensimu masih bisa jauh lebih tinggi dari angka ini! Ayo tata ulang jadwal belajarmu di rumah, fokus saat guru menjelaskan, dan buktikan kamu punya daya juang anak YPU yang tangguh!"
+    ];
+
+    // 3. Peringatan tegas tapi solutif & merangkul untuk nilai di bawah 50
+    const encouragementCritical = [
+      "Perhatian serius untuk belajarmu nih. Nilai ASTS kemarin memang masih jauh di bawah batas minimal, dan ini tanda kalau cara belajarmu harus segera diubah. Tapi jangan malah minder atau pasrah ya! Segera temui guru Informatika untuk ikut bimbingan remedial dan diskusikan materi apa saja yang belum kamu pahami. Masih ada waktu berbenah, yuk bangkit dan buktikan kamu bisa lebih bertanggung jawab!",
+      "Stop santai-santai dulu ya! Angka ini harus jadi titik balik buatmu. Masih banyak materi dasar yang belum kamu kuasai dengan baik. Jangan takut ataupun menghindar—temui guru pengampu untuk jadwal remedial. Mulai kurangi main gadget yang kurang perlu, rapikan catatan, dan mari kita perbaiki nilai ini bersama-sama!",
+      "Ayo bangun dan buktikan potensimu yang sebenarnya! Nilai di bawah 50 ini tentu bukan cerminan batas kemampuanmu kalau kamu mau lebih bersungguh-sungguh. Mulai hari ini, buat komitmen: lebih tertib belajar, berani bertanya saat belum mengerti, dan selesaikan seluruh tugas remedial dengan tuntas. Bapak/ibu guru siap bantu asal kamunya punya niat kuat untuk berubah!",
+      "Hasil ini adalah pengingat penting: ada kebiasaan belajar yang harus segera kamu rombak total! Jangan berkecil hati berlarut-larut, jadikan ini motivasi pembuktian diri. Segera hubungi guru Informatika untuk sesi pendalaman materi khusus. Tunjukkan mental pejuang yang gak gampang menyerah!"
+    ];
+
+    /* =========================================================================
+       AUDIO AMBIENT PROCEDURAL REALISTIK (Tone.js)
+       Komponen Suasana Alam Murni:
+       1. Aliran Air Sungai & Gemericik (Brown/Pink noise filter dinamis + bubble drips)
+       2. Hembusan Angin Pegunungan (Wind Gusts LFO)
+       3. Kerincing Angin Lembut (Organic Crystal Chimes)
+       ========================================================================= */
+
+    let isAudioPlaying = false;
+    let masterNatureGain = null;
+    let natureReverb = null;
+
+    // Komponen Angin
+    let windNoise = null;
+    let windFilter = null;
+    let windGain = null;
+    let windLFO = null;
+
+    // Komponen Aliran Air Sungai
+    let riverNoise = null;
+    let riverFilter1 = null;
+    let riverFilter2 = null;
+    let riverGain = null;
+    let bubbleSynth = null;
+    let riverBubbleInterval = null;
+
+    // Komponen Kerincing Angin (Wind Chimes)
+    let chimeSynth = null;
+    let chimeInterval = null;
+
+    async function initNatureAudioEngine() {
+      if (masterNatureGain) return;
+
+      // Inisialisasi Audio Context Tone.js
+      await Tone.start();
+
+      // Master Gain Controller untuk kontrol volume
+      masterNatureGain = new Tone.Gain(0.7).toDestination();
+
+      // 1. Reverb Ruang Alam Terbuka (Open Air Valley Ambience)
+      natureReverb = new Tone.Reverb({
+        decay: 5.5,
+        preDelay: 0.12,
+        wet: 0.65
+      });
+      await natureReverb.generate();
+      natureReverb.connect(masterNatureGain);
+
+      // =====================================================================
+      // LAYER 1: ALIRAN AIR SUNGAI & GEMERICIK (Mountain River & Stream)
+      // =====================================================================
+      riverNoise = new Tone.Noise("brown");
+      
+      // Dual filter untuk tekstur arus air yang alami
+      riverFilter1 = new Tone.Filter({
+        frequency: 600,
+        type: "bandpass",
+        Q: 1.8
+      });
+
+      riverFilter2 = new Tone.Filter({
+        frequency: 1800,
+        type: "lowpass",
+        rolloff: -12
+      });
+
+      riverGain = new Tone.Gain(0.18);
+
+      // Modulasi frekuensi air mengalir agar tidak statis
+      const riverWaterLFO = new Tone.LFO({
+        frequency: "0.45hz",
+        min: 420,
+        max: 820
+      }).connect(riverFilter1.frequency);
+      riverWaterLFO.start();
+
+      riverNoise.chain(riverFilter1, riverFilter2, riverGain, natureReverb);
+
+      // Synth khusus droplet / tetesan gemericik air lembut
+      bubbleSynth = new Tone.Synth({
+        oscillator: { type: "sine" },
+        envelope: {
+          attack: 0.015,
+          decay: 0.12,
+          sustain: 0,
+          release: 0.08
+        }
+      });
+      const bubbleGain = new Tone.Gain(0.09);
+      bubbleSynth.chain(bubbleGain, natureReverb);
+
+      // =====================================================================
+      // LAYER 2: HEMBUSAN ANGIN SEJUK BERGULIR (Organic Mountain Breeze)
+      // =====================================================================
+      windNoise = new Tone.Noise("pink");
+      windFilter = new Tone.Filter({
+        frequency: 340,
+        type: "lowpass",
+        rolloff: -24
+      });
+      windGain = new Tone.Gain(0.12);
+
+      // LFO meniru hembusan angin yang datang dan pergi (gusting)
+      windLFO = new Tone.LFO({
+        frequency: "0.08hz",
+        min: 180,
+        max: 680
+      }).connect(windFilter.frequency);
+      windLFO.start();
+
+      windNoise.chain(windFilter, windGain, natureReverb);
+
+      // =====================================================================
+      // LAYER 3: KERINCING ANGIN KECIL / WIND CHIMES (Silver & Brass Bells)
+      // =====================================================================
+      chimeSynth = new Tone.PolySynth(Tone.Synth, {
+        oscillator: { type: "triangle" },
+        envelope: {
+          attack: 0.005,
+          decay: 2.2,
+          sustain: 0.02,
+          release: 2.8
+        }
+      });
+      chimeSynth.volume.value = -18;
+      
+      const chimeChorus = new Tone.Chorus(2.2, 4.0, 0.45).start();
+      chimeSynth.chain(chimeChorus, natureReverb);
+    }
+
+    // Frekuensi lonceng angin kerincing (nada tinggi, jernih & bergetar lembut)
+    const chimePitches = ["E5", "G5", "A5", "B5", "D6", "E6", "G6", "A6", "B6", "D7"];
+
+    // Bunyikan kelompok kerincing kecil (seperti tertiup semilir angin)
+    function triggerWindChimeBurst() {
+      if (!isAudioPlaying || !chimeSynth) return;
+      
+      // 2 sampai 4 dentingan kerincing berturutan
+      const count = 2 + Math.floor(Math.random() * 3);
+      for (let i = 0; i < count; i++) {
+        const pitch = chimePitches[Math.floor(Math.random() * chimePitches.length)];
+        const delay = (i * 0.16) + (Math.random() * 0.12);
+        const velocity = 0.2 + (Math.random() * 0.22);
+        chimeSynth.triggerAttackRelease(pitch, "4n", Tone.now() + delay, velocity);
+      }
+    }
+
+    // Bunyikan tetesan gemericik air lembut
+    function triggerRiverWaterBubble() {
+      if (!isAudioPlaying || !bubbleSynth) return;
+      const pitches = ["C5", "D5", "F5", "G5", "A5", "C6", "D6"];
+      const p = pitches[Math.floor(Math.random() * pitches.length)];
+      bubbleSynth.triggerAttackRelease(p, "16n", Tone.now(), 0.12 + Math.random() * 0.15);
+    }
+
+    function adjustNatureVolume(val) {
+      if (masterNatureGain) {
+        // Skala linear 0 - 100 ke gain 0 - 1
+        masterNatureGain.gain.rampTo(val / 100, 0.1);
+      }
+    }
+
+    async function toggleNatureAudio() {
+      try {
+        await initNatureAudioEngine();
+      } catch (e) {
+        console.warn("Audio init warning:", e);
+      }
+
+      const bar1 = document.getElementById("soundBar1");
+      const bar2 = document.getElementById("soundBar2");
+      const bar3 = document.getElementById("soundBar3");
+      const soundLabel = document.getElementById("soundLabel");
+      const btn = document.getElementById("btnAmbientSound");
+
+      if (!isAudioPlaying) {
+        isAudioPlaying = true;
+
+        // Hidupkan layer angin & aliran air sungai
+        if (riverNoise) riverNoise.start();
+        if (windNoise) windNoise.start();
+
+        // Jadwal tetesan gemericik air alami
+        riverBubbleInterval = setInterval(() => {
+          if (Math.random() > 0.35) {
+            triggerRiverWaterBubble();
+          }
+        }, 900);
+
+        // Jadwal kerincing angin berbunyi saat ada hembusan angin
+        triggerWindChimeBurst();
+        chimeInterval = setInterval(() => {
+          if (Math.random() > 0.4) {
+            triggerWindChimeBurst();
+          }
+        }, 3200);
+
+        // Update Indikator UI
+        bar1.className = "w-0.5 bg-emerald-600 rounded-full sound-active-bar-1";
+        bar2.className = "w-0.5 bg-emerald-600 rounded-full sound-active-bar-2";
+        bar3.className = "w-0.5 bg-emerald-600 rounded-full sound-active-bar-3";
+        soundLabel.textContent = "Suara Alam: Aktif 🍃";
+        btn.classList.add("bg-pastel-sprout/90", "text-emerald-950");
+      } else {
+        isAudioPlaying = false;
+
+        // Hentikan suara
+        if (riverNoise) riverNoise.stop();
+        if (windNoise) windNoise.stop();
+        if (riverBubbleInterval) clearInterval(riverBubbleInterval);
+        if (chimeInterval) clearInterval(chimeInterval);
+
+        // Reset Indikator UI
+        bar1.className = "w-0.5 h-2 bg-stone-400 rounded-full";
+        bar2.className = "w-0.5 h-3.5 bg-stone-400 rounded-full";
+        bar3.className = "w-0.5 h-1.5 bg-stone-400 rounded-full";
+        soundLabel.textContent = "Suara Alam: Bisu";
+        btn.classList.remove("bg-pastel-sprout/90", "text-emerald-950");
+      }
+    }
+
+    // Nada lembut pemanis saat kartu hasil muncul
+    function playGentleSuccessChime() {
+      if (!chimeSynth) return;
+      try {
+        const now = Tone.now();
+        chimeSynth.triggerAttackRelease("E5", "4n", now, 0.3);
+        chimeSynth.triggerAttackRelease("A5", "4n", now + 0.12, 0.35);
+        chimeSynth.triggerAttackRelease("D6", "2n", now + 0.28, 0.4);
+      } catch (err) {
+        // Fallback jika belum diaktifkan
+      }
+    }
+
+    let currentCaptcha = "";
+
+    // Generate random 5-character alphanumeric captcha
+    function generateNewCaptcha() {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      let res = "";
+      for (let i = 0; i < 5; i++) {
+        res += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      currentCaptcha = res;
+      const el = document.getElementById("captchaText");
+      if (el) el.textContent = res;
+      const inputEl = document.getElementById("captchaInput");
+      if (inputEl) inputEl.value = "";
+    }
+
+    // Hash function to consistently select personalized message for each student
+    function getPersonalizedMessage(name, categoryList) {
+      let hash = 0;
+      for (let i = 0; i < name.length; i++) {
+        hash = (hash << 5) - hash + name.charCodeAt(i);
+        hash |= 0;
+      }
+      const index = Math.abs(hash) % categoryList.length;
+      const firstName = name.split(" ")[0];
+      return `Halo <b>${firstName}</b>! ${categoryList[index]}`;
+    }
+
+    // Launch cheerful pastel nature confetti animation (leaf greens, cream, floral pink, sky)
+    function fireCelebrationConfetti() {
+      confetti({
+        particleCount: 85,
+        spread: 75,
+        origin: { y: 0.12 },
+        colors: ['#B7E4C7', '#D8F3DC', '#CCD5AE', '#E9EDC9', '#FDE2E4', '#D0EBFB']
+      });
+
+      setTimeout(() => {
+        confetti({
+          particleCount: 50,
+          angle: 60,
+          spread: 60,
+          origin: { x: 0 },
+          colors: ['#74C69D', '#D8F3DC', '#FEFAE0', '#F7ADC2']
+        });
+        confetti({
+          particleCount: 50,
+          angle: 120,
+          spread: 60,
+          origin: { x: 1 },
+          colors: ['#95D5B2', '#CCD5AE', '#D0EBFB', '#FAEDCD']
+        });
+      }, 250);
+    }
+
+    function showAlert(msg, isError = true) {
+      const box = document.getElementById("alertBox");
+      const text = document.getElementById("alertMessage");
+      const icon = document.getElementById("alertIcon");
+
+      text.innerHTML = msg;
+      box.classList.remove("hidden", "bg-rose-50", "text-rose-700", "border-rose-200", "bg-amber-50", "text-amber-800", "border-amber-200");
+      
+      if (isError) {
+        box.classList.add("bg-rose-50", "text-rose-700", "border", "border-rose-200");
+        icon.className = "fa-solid fa-triangle-exclamation text-rose-500 mt-0.5 text-sm";
+      } else {
+        box.classList.add("bg-amber-50", "text-amber-800", "border", "border-amber-200");
+        icon.className = "fa-solid fa-circle-info text-amber-500 mt-0.5 text-sm";
+      }
+    }
+
+    function hideAlert() {
+      document.getElementById("alertBox").classList.add("hidden");
+    }
+
+    function handleCheckResult() {
+      hideAlert();
+      const usernameInput = document.getElementById("usernameInput").value.trim();
+      const captchaInput = document.getElementById("captchaInput").value.trim().toUpperCase();
+
+      if (!usernameInput) {
+        showAlert("Silakan masukkan Nomor Peserta / Username Anda.");
+        return;
+      }
+
+      if (!captchaInput) {
+        showAlert("Silakan masukkan kode captcha keamanan.");
+        return;
+      }
+
+      // Validasi captcha
+      if (captchaInput !== currentCaptcha) {
+        showAlert("Kode Captcha salah! Silakan perhatikan kode baru yang tertera.");
+        generateNewCaptcha();
+        return;
+      }
+
+      // Cari siswa di database
+      const student = studentDatabase.find(s => s.username === usernameInput);
+
+      if (!student) {
+        showAlert("Nomor Peserta <b>" + usernameInput + "</b> tidak ditemukan dalam database. Pastikan nomor yang dimasukkan sudah sesuai kartu peserta.");
+        generateNewCaptcha();
+        return;
+      }
+
+      // Tampilkan Hasil
+      renderStudentResult(student);
+    }
+
+    function renderStudentResult(student) {
+      const resContainer = document.getElementById("resultContainer");
+      const resName = document.getElementById("resName");
+      const resUsername = document.getElementById("resUsername");
+      const resClass = document.getElementById("resClass");
+      const resScore = document.getElementById("resScore");
+      const resKkmRef = document.getElementById("resKkmRef");
+      const statusBadge = document.getElementById("statusBadge");
+      const iconScoreBox = document.getElementById("iconScoreBox");
+      const feedbackBox = document.getElementById("feedbackBox");
+      const feedbackIcon = document.getElementById("feedbackIcon");
+      const feedbackTitle = document.getElementById("feedbackTitle");
+      const feedbackText = document.getElementById("feedbackText");
+
+      // Isi Data Diri Siswa
+      resName.textContent = student.name;
+      resUsername.textContent = student.username;
+      resClass.textContent = student.class;
+
+      // KKM Rule: Kelas VIII = 76, Kelas IX = 78
+      const isClassVIII = student.class.includes("VIII");
+      const kkm = isClassVIII ? 76 : 78;
+      resKkmRef.textContent = `/ KKM: ${kkm}`;
+
+      // Reset styling classes
+      feedbackBox.className = "p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed mb-4 relative z-10";
+      statusBadge.className = "text-xs font-bold px-3 py-1 rounded-full border";
+      iconScoreBox.className = "w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-xs";
+
+      if (student.score === null || student.score === undefined) {
+        // Belum ada nilai (Susulan / Sakit / Pending)
+        resScore.textContent = "--";
+        resScore.className = "text-3xl sm:text-4xl font-black text-stone-400";
+        statusBadge.textContent = "SUSULAN / TUNDA";
+        statusBadge.classList.add("bg-stone-100", "text-stone-600", "border-stone-300");
+        iconScoreBox.classList.add("bg-stone-100", "text-stone-500");
+        iconScoreBox.innerHTML = '<i class="fa-solid fa-hourglass-half"></i>';
+
+        feedbackBox.classList.add("bg-amber-50/70", "border-amber-200");
+        feedbackIcon.textContent = "⏳";
+        feedbackTitle.textContent = "Status Nilai Menunggu Konfirmasi";
+        feedbackTitle.className = "font-bold text-amber-900 mb-1";
+        feedbackText.innerHTML = `Halo <b>${student.name.split(" ")[0]}</b>, bibit nilai ujianmu belum terdata atau kamu terdaftar mengikuti ujian susulan. Silakan segera berkoordinasi dengan guru Informatika agar proses penilaianmu segera tuntas.`;
+      } 
+      else {
+        resScore.textContent = student.score;
+
+        if (student.score >= kkm) {
+          // Tuntas / Di atas KKM (Nature Blooming Green)
+          resScore.className = "text-4xl sm:text-5xl font-black text-emerald-700";
+          statusBadge.textContent = "TUNTAS (>= KKM)";
+          statusBadge.classList.add("bg-pastel-sprout", "text-emerald-900", "border-pastel-leaf");
+          iconScoreBox.classList.add("bg-pastel-sprout", "text-emerald-700");
+          iconScoreBox.innerHTML = '<i class="fa-solid fa-clover"></i>';
+
+          feedbackBox.classList.add("bg-emerald-50/90", "border-emerald-200");
+          feedbackIcon.textContent = "🌸";
+          feedbackTitle.textContent = "Selamat! Prestasi Membanggakan";
+          feedbackTitle.className = "font-bold text-emerald-900 mb-1";
+          feedbackText.innerHTML = getPersonalizedMessage(student.name, complimentsKkm);
+
+          // Panggil Confetti kelopak pastel & denting halus
+          fireCelebrationConfetti();
+          playGentleSuccessChime();
+        } 
+        else if (student.score >= 50) {
+          // Di bawah KKM tapi >= 50 (Soft Warm Sand / Earth)
+          resScore.className = "text-4xl sm:text-5xl font-black text-amber-700";
+          statusBadge.textContent = "BELUM TUNTAS";
+          statusBadge.classList.add("bg-pastel-earthSand", "text-amber-950", "border-amber-300");
+          iconScoreBox.classList.add("bg-pastel-earthSand", "text-amber-800");
+          iconScoreBox.innerHTML = '<i class="fa-solid fa-seedling"></i>';
+
+          feedbackBox.classList.add("bg-amber-50/80", "border-amber-200");
+          feedbackIcon.textContent = "🌱";
+          feedbackTitle.textContent = "Catatan Evaluasi & Semangat Belajar";
+          feedbackTitle.className = "font-bold text-amber-900 mb-1";
+          feedbackText.innerHTML = getPersonalizedMessage(student.name, encouragementMid);
+        } 
+        else {
+          // Nilai di bawah 50 (Peringatan Tegas & Positif berbalut metafora pohon & akar)
+          resScore.className = "text-4xl sm:text-5xl font-black text-rose-600";
+          statusBadge.textContent = "PERLU REMEDIAL INTENSIF";
+          statusBadge.classList.add("bg-pastel-blossomPink", "text-rose-900", "border-rose-300");
+          iconScoreBox.classList.add("bg-pastel-blossomPink", "text-rose-700");
+          iconScoreBox.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+
+          feedbackBox.classList.add("bg-rose-50/90", "border-rose-200");
+          feedbackIcon.textContent = "⚠️";
+          feedbackTitle.textContent = "Peringatan Khusus: Wajib Bimbingan Remedial";
+          feedbackTitle.className = "font-bold text-rose-900 mb-1";
+          feedbackText.innerHTML = getPersonalizedMessage(student.name, encouragementCritical);
+        }
+      }
+
+      // Tampilkan kontainer kartu dengan scroll halus
+      resContainer.classList.remove("hidden");
+      resContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function resetSearch() {
+      document.getElementById("usernameInput").value = "";
+      document.getElementById("captchaInput").value = "";
+      document.getElementById("resultContainer").classList.add("hidden");
+      hideAlert();
+      generateNewCaptcha();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Fitur Download Kartu Nilai sebagai JPG menggunakan html2canvas
+    async function downloadCardAsJPG() {
+      const card = document.getElementById("printableResultCard");
+      const btn = document.getElementById("btnDownload");
+      const studentName = document.getElementById("resName").textContent.trim() || "Nilai-ASTS";
+      const studentClass = document.getElementById("resClass").textContent.trim() || "Informatika";
+
+      // Ubah state tombol saat proses render JPG
+      const originalBtnHtml = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>Membuat Berkas JPG...</span>';
+
+      try {
+        const canvas = await html2canvas(card, {
+          scale: 2, // Kualitas HD
+          backgroundColor: '#FFFFFF',
+          useCORS: true,
+          logging: false
+        });
+
+        // Convert ke format JPG
+        const imageURL = canvas.toDataURL("image/jpeg", 0.95);
+        
+        // Picu pengunduhan berkas
+        const link = document.createElement("a");
+        const safeName = studentName.replace(/[^a-zA-Z0-9]/g, "_");
+        link.download = `ASTS_Informatika_${studentClass}_${safeName}.jpg`;
+        link.href = imageURL;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+      } catch (err) {
+        console.error("Gagal mengunduh JPG:", err);
+        showAlert("Gagal mengunduh gambar sertifikat nilai. Silakan coba kembali beberapa saat lagi.");
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalBtnHtml;
+      }
+    }
+
+    // Inisialisasi Captcha dan tanggal saat window load
+    window.addEventListener("load", () => {
+      generateNewCaptcha();
+      
+      const now = new Date();
+      const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+      const dateEl = document.getElementById("resDate");
+      if (dateEl) {
+        dateEl.textContent = `${months[now.getMonth()]} ${now.getFullYear()}`;
+      }
+    });
+
+    /* =========================================================================
+       ANIMASI DAUN GUGUR ALAMI SECARA REAL-TIME (Interactive Canvas Falling Leaves)
+       Efek daun pastel berguguran dari atas ke bawah dengan pusaran angin lembut
+       ========================================================================= */
+    const fallingCanvas = document.getElementById("leavesFallingCanvas");
+    const fCtx = fallingCanvas.getContext("2d");
+    let canvasW = window.innerWidth;
+    let canvasH = window.innerHeight;
+    let leavesArray = [];
+    const MAX_LEAVES = 34; // Kepadatan daun ideal agar tetap elegan dan tidak menutupi teks
+
+    function resizeFallingCanvas() {
+      canvasW = window.innerWidth;
+      canvasH = window.innerHeight;
+      fallingCanvas.width = canvasW;
+      fallingCanvas.height = canvasH;
+    }
+    window.addEventListener("resize", resizeFallingCanvas);
+    resizeFallingCanvas();
+
+    // Palet warna daun gugur pastel alami
+    const leafColors = [
+      { fill: "#74C69D", opacity: 0.72 }, // Mint daun segar
+      { fill: "#95D5B2", opacity: 0.78 }, // Soft emerald
+      { fill: "#B7E4C7", opacity: 0.70 }, // Sprout terang
+      { fill: "#CCD5AE", opacity: 0.75 }, // Sage lembut
+      { fill: "#E9EDC9", opacity: 0.76 }, // Daun muda
+      { fill: "#D4A373", opacity: 0.65 }, // Daun kecokelatan kering
+      { fill: "#FAEDCD", opacity: 0.68 }  // Daun kuning musim gugur
+    ];
+
+    class FallingLeaf {
+      constructor(initialScatter = false) {
+        this.reset(initialScatter);
+      }
+
+      reset(initialScatter = false) {
+        this.x = Math.random() * canvasW;
+        this.y = initialScatter ? Math.random() * canvasH : -25 - Math.random() * 40;
+        this.size = 13 + Math.random() * 12; // Ukuran bervariasi
+        this.speedY = 0.9 + Math.random() * 1.35; // Kecepatan melayang turun
+        this.speedX = -0.3 + Math.random() * 0.8;
+        this.colorObj = leafColors[Math.floor(Math.random() * leafColors.length)];
+        this.angle = Math.random() * Math.PI * 2;
+        this.spinSpeed = (Math.random() - 0.5) * 0.035;
+        this.swayFactor = 0.6 + Math.random() * 0.8;
+        this.swayProgress = Math.random() * Math.PI * 2;
+        this.swayFrequency = 0.02 + Math.random() * 0.015;
+      }
+
+      update() {
+        this.y += this.speedY;
+        this.swayProgress += this.swayFrequency;
+        this.x += Math.sin(this.swayProgress) * this.swayFactor + this.speedX;
+        this.angle += this.spinSpeed;
+
+        // Reset bila sudah melewati batas bawah layar
+        if (this.y > canvasH + 30 || this.x < -40 || this.x > canvasW + 40) {
+          this.reset(false);
+        }
+      }
+
+      draw() {
+        fCtx.save();
+        fCtx.translate(this.x, this.y);
+        fCtx.rotate(this.angle);
+        fCtx.scale(Math.cos(this.swayProgress * 0.8), 1); // Efek membalik di udara
+
+        fCtx.fillStyle = this.colorObj.fill;
+        fCtx.globalAlpha = this.colorObj.opacity;
+
+        // Menggambar bentuk daun organik melengkung
+        fCtx.beginPath();
+        fCtx.moveTo(0, -this.size);
+        fCtx.bezierCurveTo(this.size * 0.7, -this.size * 0.5, this.size * 0.7, this.size * 0.5, 0, this.size);
+        fCtx.bezierCurveTo(-this.size * 0.7, this.size * 0.5, -this.size * 0.7, -this.size * 0.5, 0, -this.size);
+        fCtx.closePath();
+        fCtx.fill();
+
+        // Tulang daun tengah tipis
+        fCtx.strokeStyle = "rgba(255, 255, 255, 0.4)";
+        fCtx.lineWidth = 1;
+        fCtx.beginPath();
+        fCtx.moveTo(0, -this.size * 0.8);
+        fCtx.lineTo(0, this.size * 0.8);
+        fCtx.stroke();
+
+        fCtx.restore();
+      }
+    }
+
+    // Inisialisasi daftar partikel daun
+    for (let i = 0; i < MAX_LEAVES; i++) {
+      leavesArray.push(new FallingLeaf(true));
+    }
+
+    // Loop animasi daun berjatuhan
+    function animateFallingLeaves() {
+      fCtx.clearRect(0, 0, canvasW, canvasH);
+      for (let i = 0; i < leavesArray.length; i++) {
+        leavesArray[i].update();
+        leavesArray[i].draw();
+      }
+      requestAnimationFrame(animateFallingLeaves);
+    }
+    requestAnimationFrame(animateFallingLeaves);
+  </script>
+</body>
+</html>
